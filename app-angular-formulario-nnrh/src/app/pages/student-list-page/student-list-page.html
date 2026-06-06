@@ -1,0 +1,16 @@
+<div class="container m-4">
+  <h2 class="mb-4">Número de alumnos: {{ students.length }}</h2>
+
+  <div class="row">
+    @for (student of students; track student.id) {
+      <div class="col-md-4 mb-3">
+        <app-student-component [student]="student" />
+      </div>
+    }
+  </div>
+
+  <button class="btn btn-primary" routerLink="/students/new">
+    Crear nuevo alumno
+  </button>
+
+</div>

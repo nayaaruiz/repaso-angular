@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ student().name }} {{ student().surnames }}</h5>
+    <p class="card-text">Nº: {{ student().id }}</p>
+    <p class="card-text">Email: {{ student().age }}</p>
+    <p class="card-text">Curso: {{ student().course }}</p>
+    <button class="btn btn-primary" (click)="verDetalle()">
+        Ver detalle
+    </button>
+  </div>
+</div>
