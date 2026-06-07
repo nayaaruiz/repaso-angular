@@ -1,0 +1,19 @@
+<div class="container m-4">
+    <h1 class="text-center mb-4">Vehicles List</h1>
+    <div class="container mt-2">
+        <div class="row justify-content-around">
+            @for (vehicle of vehicles; track $index) {
+                <div class="col-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ vehicle.name }}</h5>
+                            <p class="card-text">Model: {{ vehicle.model }}</p>
+                            <p class="card-text">Manufacturer: {{ vehicle.manufacturer }}</p>
+                            <p class="card-text">Length: {{ vehicle.length }}</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
