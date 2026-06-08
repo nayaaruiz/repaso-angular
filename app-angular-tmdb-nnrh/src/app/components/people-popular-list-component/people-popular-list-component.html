@@ -1,0 +1,9 @@
+<div class="row py-3">
+  @for (person of popularPeople; track $index) {
+  <div class="card col-3">
+    <div class="card-body">
+      <h3>{{ person.name }}</h3>
+    </div>
+  </div>
+  }
+</div>

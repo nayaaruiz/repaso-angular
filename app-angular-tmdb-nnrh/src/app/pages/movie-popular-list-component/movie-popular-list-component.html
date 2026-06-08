@@ -1,0 +1,12 @@
+<div class="row py-3">
+  @for (movie of popularMovies; track movie.id; ) {
+  <div class="card col-3">
+    <div class="card-body">
+      <h3>{{ movie.title }}</h3>
+    </div>
+    <div class="card-footer">
+      <a [routerLink]="['/movie', movie.id]" class="btn btn-primary">Ver detalles</a>
+    </div>
+  </div>
+  }
+</div>

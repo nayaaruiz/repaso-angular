@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <label for="show" class="form-label">Cantidad a ver</label>
+      <select name="show" id="show" class="form-select" [formControl]="cantidad">
+        <option value="2" (change)="cantidad">2</option>
+        <option value="4">4</option>
+        <option value="All">Todos</option>
+      </select>
+    </div>
+  </div>
+  @if (cantidad.value) {
+  <app-people-popular-list-component
+    [cantidad]="cantidad.value"
+  ></app-people-popular-list-component>
+  <app-movie-popular-list-component [cantidad]="cantidad.value"></app-movie-popular-list-component>
+  }
+</div>
